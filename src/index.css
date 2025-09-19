@@ -48,7 +48,7 @@ All colors MUST be HSL.
     /* Gradients */
     --gradient-nature: linear-gradient(135deg, hsl(var(--nature-green)), hsl(var(--field-green)));
     --gradient-earth: linear-gradient(135deg, hsl(var(--earth-brown)), hsl(var(--harvest-gold)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--nature-green) / 0.9), hsl(var(--field-green) / 0.8));
+    --gradient-hero: linear-gradient(135deg, hsl(120 60% 20% / 0.6), hsl(120 45% 35% / 0.4));
     
     /* Shadows */
     --shadow-nature: 0 10px 30px -10px hsl(var(--nature-green) / 0.3);

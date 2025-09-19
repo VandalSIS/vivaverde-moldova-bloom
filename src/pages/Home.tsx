@@ -51,25 +51,25 @@ const Home = () => {
           <div className="absolute inset-0 bg-gradient-hero"></div>
         </div>
         
-        <div className="relative z-10 text-center text-primary-foreground px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight">
+        <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight text-white">
             Vivaverde
-            <span className="block text-2xl sm:text-3xl lg:text-4xl font-normal mt-2">
+            <span className="block text-2xl sm:text-3xl lg:text-4xl font-normal mt-2 text-white/90">
               Natura Moldovei în Starea Ei Pură
             </span>
           </h1>
-          <p className="text-lg sm:text-xl lg:text-2xl mb-8 text-primary-foreground/90 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl lg:text-2xl mb-8 text-white/80 max-w-3xl mx-auto">
             10 hectare de terenuri ecologice, 20 de ani de experiență, 
             plante crescute cu grijă manuală
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild className="bg-primary-foreground text-nature-green hover:bg-primary-foreground/90">
+            <Button size="lg" variant="hero" asChild>
               <Link to="/produse">
                 Descoperă Produsele Noastre
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10">
+            <Button size="lg" variant="hero-outline" asChild>
               <Link to="/despre">
                 Povestea Noastră
               </Link>
