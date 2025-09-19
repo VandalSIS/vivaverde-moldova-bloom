@@ -1,0 +1,43 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background squares -->
+  <rect x="0" y="0" width="133" height="133" fill="#90C695"/>
+  <rect x="133" y="0" width="134" height="133" fill="#2F5233"/>
+  <rect x="267" y="0" width="133" height="133" fill="#90C695"/>
+  
+  <rect x="0" y="133" width="133" height="134" fill="#2F5233"/>
+  <rect x="133" y="133" width="134" height="134" fill="#2F5233"/>
+  <rect x="267" y="133" width="133" height="134" fill="#2F5233"/>
+  
+  <rect x="0" y="267" width="133" height="133" fill="#90C695"/>
+  <rect x="133" y="267" width="134" height="133" fill="#2F5233"/>
+  <rect x="267" y="267" width="133" height="133" fill="#90C695"/>
+  
+  <!-- Central pattern -->
+  <g transform="translate(200,200)">
+    <!-- Center diamond -->
+    <rect x="-15" y="-15" width="30" height="30" fill="#D2691E" transform="rotate(45)"/>
+    <rect x="-8" y="-8" width="16" height="16" fill="#2F5233" transform="rotate(45)"/>
+    
+    <!-- Top diamond -->
+    <rect x="-8" y="-50" width="16" height="16" fill="#D2691E" transform="rotate(45)"/>
+    <rect x="-4" y="-46" width="8" height="8" fill="#2F5233" transform="rotate(45)"/>
+    
+    <!-- Right diamond -->
+    <rect x="34" y="-8" width="16" height="16" fill="#D2691E" transform="rotate(45)"/>
+    <rect x="38" y="-4" width="8" height="8" fill="#2F5233" transform="rotate(45)"/>
+    
+    <!-- Bottom diamond -->
+    <rect x="-8" y="34" width="16" height="16" fill="#D2691E" transform="rotate(45)"/>
+    <rect x="-4" y="38" width="8" height="8" fill="#2F5233" transform="rotate(45)"/>
+    
+    <!-- Left diamond -->
+    <rect x="-50" y="-8" width="16" height="16" fill="#D2691E" transform="rotate(45)"/>
+    <rect x="-46" y="-4" width="8" height="8" fill="#2F5233" transform="rotate(45)"/>
+    
+    <!-- Small connecting diamonds -->
+    <rect x="-4" y="-25" width="8" height="8" fill="#D2691E" transform="rotate(45)"/>
+    <rect x="17" y="-4" width="8" height="8" fill="#D2691E" transform="rotate(45)"/>
+    <rect x="-4" y="17" width="8" height="8" fill="#D2691E" transform="rotate(45)"/>
+    <rect x="-25" y="-4" width="8" height="8" fill="#D2691E" transform="rotate(45)"/>
+  </g>
+</svg>

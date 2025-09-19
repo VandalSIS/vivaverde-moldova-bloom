@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Leaf } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import vivaVerdeLogo from "@/assets/vivaverde-logo.svg";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +22,8 @@ const Navigation = () => {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 text-xl font-serif font-semibold text-nature-green">
-            <Leaf className="h-8 w-8" />
+          <Link to="/" className="flex items-center space-x-3 text-xl font-serif font-semibold text-nature-green">
+            <img src={vivaVerdeLogo} alt="Vivaverde Logo" className="h-10 w-10" />
             <span>Vivaverde</span>
           </Link>
 

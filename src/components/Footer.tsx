@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Leaf, Facebook, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import vivaVerdeLogo from "@/assets/vivaverde-logo.svg";
 
 const Footer = () => {
   return (
@@ -8,8 +9,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo & Description */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-2 text-xl font-serif font-semibold mb-4">
-              <Leaf className="h-8 w-8 text-nature-green-light" />
+            <div className="flex items-center space-x-3 text-xl font-serif font-semibold mb-4">
+              <img src={vivaVerdeLogo} alt="Vivaverde Logo" className="h-10 w-10" />
               <span>Vivaverde</span>
             </div>
             <p className="text-sm text-white/80 mb-4 max-w-md">
