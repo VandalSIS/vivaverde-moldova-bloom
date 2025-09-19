@@ -13,6 +13,20 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
+      },
+      backgroundImage: {
+        'gradient-nature': 'var(--gradient-nature)',
+        'gradient-earth': 'var(--gradient-earth)',
+        'gradient-hero': 'var(--gradient-hero)',
+      },
+      boxShadow: {
+        'nature': 'var(--shadow-nature)',
+        'earth': 'var(--shadow-earth)',
+        'elevated': 'var(--shadow-elevated)',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -46,6 +60,23 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        nature: {
+          green: "hsl(var(--nature-green))",
+          "green-light": "hsl(var(--nature-green-light))",
+        },
+        earth: {
+          brown: "hsl(var(--earth-brown))",
+          "brown-light": "hsl(var(--earth-brown-light))",
+        },
+        harvest: {
+          gold: "hsl(var(--harvest-gold))",
+        },
+        field: {
+          green: "hsl(var(--field-green))",
+        },
+        soil: {
+          dark: "hsl(var(--soil-dark))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
