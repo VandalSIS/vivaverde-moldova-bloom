@@ -2,7 +2,7 @@ import { ArrowRight, Leaf, Users, Award, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import workersHarvesting from "@/assets/workers-harvesting.jpg";
+import heroImage from "@/assets/field-workers.jpg";
 import proudFarmer from "@/assets/proud-farmer.jpg";
 import herbHarvesting from "@/assets/herb-harvesting.jpg";
 import lavenderHarvest from "@/assets/lavender-harvest.jpg";
@@ -46,9 +46,9 @@ const Home = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${workersHarvesting})` }}
+          style={{ backgroundImage: `url(${heroImage})` }}
         >
-          <div className="absolute inset-0 bg-gradient-hero"></div>
+          <div className="absolute inset-0 bg-gradient-hero opacity-60"></div>
         </div>
         
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">

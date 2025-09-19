@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Youtube, Mail, Phone, MapPin } from "lucide-react";
-import vivaVerdeLogo from "@/assets/vivaverde-logo.svg";
+import vivaVerdeLogo from "@/assets/image.png";
 
 const Footer = () => {
   return (

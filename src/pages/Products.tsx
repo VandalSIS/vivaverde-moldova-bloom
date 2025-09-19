@@ -3,42 +3,54 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
+import cimbrulDeCultura from "@/assets/cimbrul-de-cultura.webp";
+import sovarfImage from "@/assets/650d20d57456bdbfd0e9e20777a97f44.jpg";
+import melisaImage from "@/assets/1200px-Melissa_officinalis2.jpg";
+import salvieImage from "@/assets/sage-3572718_640.jpg";
+import monardaImage from "@/assets/monarda-v-sadu-lyubuemsya-lechimsya-i-pem-vkusnyiy-chay-01.jpg";
+import echinaceeImage from "@/assets/echinaceea-echinacea-scaled.webp";
+import urzicaImage from "@/assets/urzica.webp";
+import floreSalcamImage from "@/assets/flori-de-salcam-pentru-sanatate.jpg";
+import cicoareImage from "@/assets/b27f0856e120b08791995f036fb8e65b.jpg";
+import pojarnitaImage from "@/assets/sunatoare-1024x667-1.webp";
+import coadaSoricelulImage from "@/assets/62407713.jpg";
+import maceseImage from "@/assets/fructele-de-maces-un-rezervor-de-sanatate-si-energie-29291.jpg";
 
 const Products = () => {
   const cultivatedPlants = [
     {
       name: "CIMBRU",
-      icon: "🌱",
+      image: cimbrulDeCultura,
       description: "Aromă intensă, perfect pentru ceaiuri tonifiante și preparate culinare",
       properties: ["Antioxidant", "Antiseptic", "Digestiv"]
     },
     {
       name: "ȘOVÂRF (Oregano Sălbatic)",
-      icon: "🌿", 
+      image: sovarfImage,
       description: "Plantă aromatică cu proprietăți antibacteriene puternice",
       properties: ["Antibacterian", "Antifungic", "Expectorant"]
     },
     {
       name: "MELISA (Roinița)",
-      icon: "🍃",
+      image: melisaImage,
       description: "Efecte calmante, aromă delicată, ideală pentru ceaiuri relaxante",
       properties: ["Calmant", "Antispastic", "Relaxant"]
     },
     {
       name: "SALVIE",
-      icon: "🌱",
+      image: salvieImage,
       description: "\"Planta vindecătoare\" folosită de secole în medicina tradițională",
       properties: ["Antiinflamator", "Astringent", "Antiseptic"]
     },
     {
       name: "MONARDĂ",
-      icon: "🌸",
+      image: monardaImage,
       description: "Parfum puternic, proprietăți antimicrobiene, plantă decorativă",
       properties: ["Antimicrobian", "Aromat", "Decorativ"]
     },
     {
       name: "ECHINACEE",
-      icon: "🌻",
+      image: echinaceeImage,
       description: "Renumită pentru întărirea sistemului imunitar",
       properties: ["Imunostimulator", "Antiinflamator", "Antiviral"]
     }
@@ -47,32 +59,32 @@ const Products = () => {
   const wildPlants = [
     {
       name: "Urzică",
-      icon: "🌾",
+      image: urzicaImage,
       description: "Bogată în minerale, perfect pentru detoxifiere"
     },
     {
       name: "Floare de Salcâm", 
-      icon: "🌸",
+      image: floreSalcamImage,
       description: "Aromă delicată pentru ceaiuri și siropuri"
     },
     {
       name: "Cicoare",
-      icon: "💜", 
+      image: cicoareImage,
       description: "Înlocuitor natural de cafea, benefic pentru ficat"
     },
     {
       name: "Pojarniță (Sunătoare)",
-      icon: "🌻",
+      image: pojarnitaImage,
       description: "Efecte antidepresive naturale"
     },
     {
       name: "Coada-șoricelului",
-      icon: "🌱",
+      image: coadaSoricelulImage,
       description: "Proprietăți antiinflamatoare"
     },
     {
       name: "Măceșe",
-      icon: "🔴",
+      image: maceseImage,
       description: "Sursa naturală de vitamina C"
     }
   ];
@@ -117,12 +129,19 @@ const Products = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {cultivatedPlants.map((plant, index) => (
-              <Card key={index} className="shadow-nature hover:shadow-elevated transition-all duration-300 hover:-translate-y-1">
-                <CardHeader className="text-center">
-                  <div className="text-4xl mb-2">{plant.icon}</div>
-                  <CardTitle className="text-xl font-serif font-bold text-nature-green">
+              <Card key={index} className="shadow-nature hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={plant.image} 
+                    alt={plant.name}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <CardTitle className="absolute bottom-4 left-4 right-4 text-xl font-serif font-bold text-white">
                     {plant.name}
                   </CardTitle>
+                </div>
+                <CardHeader className="text-center pt-4">
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground text-sm">
@@ -167,12 +186,19 @@ const Products = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {wildPlants.map((plant, index) => (
-              <Card key={index} className="shadow-light hover:shadow-elevated transition-all duration-300 hover:-translate-y-1">
-                <CardContent className="p-6 text-center">
-                  <div className="text-3xl mb-3">{plant.icon}</div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">
+              <Card key={index} className="shadow-light hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                <div className="relative h-40 overflow-hidden">
+                  <img 
+                    src={plant.image} 
+                    alt={plant.name}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <h3 className="absolute bottom-3 left-3 right-3 text-lg font-semibold text-white">
                     {plant.name}
                   </h3>
+                </div>
+                <CardContent className="p-6 text-center pt-4">
                   <p className="text-muted-foreground text-sm mb-4">
                     {plant.description}
                   </p>
