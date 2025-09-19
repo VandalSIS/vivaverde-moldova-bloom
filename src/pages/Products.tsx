@@ -90,7 +90,7 @@ const Products = () => {
           </p>
           <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-6 max-w-2xl mx-auto">
             <p className="text-lg font-medium mb-2">📞 Pentru comenzi și informații</p>
-            <Button variant="outline" size="lg" asChild className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10">
+            <Button variant="hero-outline" size="lg" asChild>
               <Link to="/contact">
                 Contactează-ne Direct
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -101,7 +101,7 @@ const Products = () => {
       </section>
 
       {/* Cultivated Plants Section */}
-      <section className="py-16 lg:py-24 bg-background">
+      <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4 text-sm font-semibold px-4 py-2">
@@ -151,7 +151,7 @@ const Products = () => {
       </section>
 
       {/* Wild Plants Section */}
-      <section className="py-16 lg:py-24 bg-nature-green-light/20">
+      <section className="py-16 lg:py-24 bg-gradient-light">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4 text-sm font-semibold px-4 py-2">
@@ -167,7 +167,7 @@ const Products = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {wildPlants.map((plant, index) => (
-              <Card key={index} className="shadow-earth hover:shadow-elevated transition-all duration-300 hover:-translate-y-1">
+              <Card key={index} className="shadow-light hover:shadow-elevated transition-all duration-300 hover:-translate-y-1">
                 <CardContent className="p-6 text-center">
                   <div className="text-3xl mb-3">{plant.icon}</div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">
@@ -190,7 +190,7 @@ const Products = () => {
       </section>
 
       {/* Quality Assurance Section */}
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <Leaf className="h-16 w-16 text-nature-green mx-auto mb-6" />
@@ -220,7 +220,7 @@ const Products = () => {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-16 bg-gradient-earth text-primary-foreground">
+      <section className="py-16 bg-gradient-forest text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold mb-4">
             Pentru Comenzi și Informații despre Disponibilitate
@@ -229,13 +229,13 @@ const Products = () => {
             Contactează-ne direct pentru a afla despre stocul disponibil și prețuri
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="outline" asChild className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10">
+            <Button size="lg" variant="hero-outline" asChild>
               <Link to="/contact">
                 <Phone className="mr-2 h-5 w-5" />
                 Contactează-ne Telefonic
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10">
+            <Button size="lg" variant="hero-outline" asChild>
               <Link to="/contact">
                 <Mail className="mr-2 h-5 w-5" />
                 Trimite un Email

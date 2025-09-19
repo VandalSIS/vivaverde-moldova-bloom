@@ -17,7 +17,7 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 border-b border-border shadow-sm">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -34,8 +34,8 @@ const Navigation = () => {
                 to={item.href}
                 className={`text-sm font-medium transition-colors hover:text-nature-green ${
                   isActive(item.href)
-                    ? "text-nature-green"
-                    : "text-muted-foreground"
+                    ? "text-nature-green font-semibold"
+                    : "text-gray-700"
                 }`}
               >
                 {item.name}
@@ -67,10 +67,10 @@ const Navigation = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`block px-3 py-2 text-base font-medium rounded-md transition-colors ${
+                  className={`block px-3 py-2 text-base font-medium rounded-lg transition-colors ${
                     isActive(item.href)
-                      ? "text-nature-green bg-nature-green-light"
-                      : "text-muted-foreground hover:text-nature-green hover:bg-secondary"
+                      ? "text-nature-green bg-nature-green-light font-semibold"
+                      : "text-gray-700 hover:text-nature-green hover:bg-nature-green-light/50"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >

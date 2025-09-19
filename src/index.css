@@ -8,52 +8,54 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 45 20% 98%;
-    --foreground: 120 15% 15%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
 
     --card: 0 0% 100%;
-    --card-foreground: 120 15% 15%;
+    --card-foreground: 0 0% 0%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 120 15% 15%;
+    --popover-foreground: 0 0% 0%;
 
-    --primary: 120 60% 25%;
-    --primary-foreground: 45 20% 98%;
+    --primary: 120 60% 30%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 30% 92%;
-    --secondary-foreground: 120 30% 20%;
+    --secondary: 120 20% 95%;
+    --secondary-foreground: 0 0% 20%;
 
-    --muted: 45 20% 95%;
-    --muted-foreground: 120 10% 45%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 85 40% 50%;
-    --accent-foreground: 45 20% 98%;
+    --accent: 120 40% 70%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 45 20% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 45 20% 88%;
-    --input: 45 20% 92%;
-    --ring: 120 60% 25%;
+    --border: 0 0% 90%;
+    --input: 0 0% 95%;
+    --ring: 120 60% 30%;
 
-    /* Vivaverde Custom Colors */
-    --nature-green: 120 60% 25%;
-    --nature-green-light: 120 40% 85%;
-    --earth-brown: 25 35% 35%;
-    --earth-brown-light: 25 25% 85%;
-    --harvest-gold: 45 85% 55%;
-    --field-green: 120 45% 35%;
-    --soil-dark: 20 25% 20%;
+    /* Vivaverde Custom Colors - Green Gradients Theme */
+    --nature-green: 120 60% 30%;
+    --nature-green-light: 120 40% 90%;
+    --nature-green-medium: 120 50% 70%;
+    --nature-green-dark: 120 70% 20%;
+    --field-green: 120 45% 40%;
+    --forest-green: 120 80% 15%;
+    --mint-green: 120 30% 85%;
+    --sage-green: 120 20% 60%;
     
-    /* Gradients */
-    --gradient-nature: linear-gradient(135deg, hsl(var(--nature-green)), hsl(var(--field-green)));
-    --gradient-earth: linear-gradient(135deg, hsl(var(--earth-brown)), hsl(var(--harvest-gold)));
-    --gradient-hero: linear-gradient(135deg, hsl(120 60% 20% / 0.6), hsl(120 45% 35% / 0.4));
+    /* New Green Gradient System */
+    --gradient-nature: linear-gradient(135deg, hsl(120 60% 30%), hsl(120 45% 40%));
+    --gradient-light: linear-gradient(135deg, hsl(120 30% 85%), hsl(0 0% 100%));
+    --gradient-forest: linear-gradient(135deg, hsl(120 70% 20%), hsl(120 60% 30%));
+    --gradient-hero: linear-gradient(135deg, hsl(120 70% 15% / 0.7), hsl(120 60% 25% / 0.5));
     
     /* Shadows */
     --shadow-nature: 0 10px 30px -10px hsl(var(--nature-green) / 0.3);
-    --shadow-earth: 0 8px 25px -8px hsl(var(--earth-brown) / 0.25);
-    --shadow-elevated: 0 20px 40px -15px hsl(var(--soil-dark) / 0.15);
+    --shadow-light: 0 8px 25px -8px hsl(120 30% 85% / 0.25);
+    --shadow-elevated: 0 20px 40px -15px hsl(0 0% 0% / 0.15);
 
     --radius: 0.5rem;
 
@@ -75,42 +77,43 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 120 15% 8%;
-    --foreground: 45 20% 95%;
+    --background: 120 20% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 120 15% 10%;
-    --card-foreground: 45 20% 95%;
+    --card: 120 20% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 120 15% 10%;
-    --popover-foreground: 45 20% 95%;
+    --popover: 120 20% 10%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 120 40% 75%;
-    --primary-foreground: 120 15% 8%;
+    --primary: 120 50% 70%;
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 120 10% 15%;
-    --secondary-foreground: 45 20% 95%;
+    --secondary: 120 15% 15%;
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 120 10% 15%;
-    --muted-foreground: 45 10% 65%;
+    --muted: 120 15% 15%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 85 30% 60%;
-    --accent-foreground: 120 15% 8%;
+    --accent: 120 40% 60%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 45 20% 95%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 120 10% 20%;
-    --input: 120 10% 15%;
-    --ring: 120 40% 75%;
+    --border: 120 15% 20%;
+    --input: 120 15% 15%;
+    --ring: 120 50% 70%;
 
-    /* Dark mode nature colors */
-    --nature-green: 120 40% 75%;
+    /* Dark mode green colors */
+    --nature-green: 120 50% 70%;
     --nature-green-light: 120 20% 25%;
-    --earth-brown: 25 25% 65%;
-    --earth-brown-light: 25 15% 25%;
-    --harvest-gold: 45 75% 65%;
-    --field-green: 120 35% 65%;
-    --soil-dark: 20 15% 85%;
+    --nature-green-medium: 120 40% 50%;
+    --nature-green-dark: 120 60% 80%;
+    --field-green: 120 40% 60%;
+    --forest-green: 120 70% 85%;
+    --mint-green: 120 25% 25%;
+    --sage-green: 120 15% 40%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

@@ -19,12 +19,13 @@ export default {
       },
       backgroundImage: {
         'gradient-nature': 'var(--gradient-nature)',
-        'gradient-earth': 'var(--gradient-earth)',
+        'gradient-light': 'var(--gradient-light)',
+        'gradient-forest': 'var(--gradient-forest)',
         'gradient-hero': 'var(--gradient-hero)',
       },
       boxShadow: {
         'nature': 'var(--shadow-nature)',
-        'earth': 'var(--shadow-earth)',
+        'light': 'var(--shadow-light)',
         'elevated': 'var(--shadow-elevated)',
       },
       colors: {
@@ -64,19 +65,20 @@ export default {
         nature: {
           green: "hsl(var(--nature-green))",
           "green-light": "hsl(var(--nature-green-light))",
-        },
-        earth: {
-          brown: "hsl(var(--earth-brown))",
-          "brown-light": "hsl(var(--earth-brown-light))",
-        },
-        harvest: {
-          gold: "hsl(var(--harvest-gold))",
+          "green-medium": "hsl(var(--nature-green-medium))",
+          "green-dark": "hsl(var(--nature-green-dark))",
         },
         field: {
           green: "hsl(var(--field-green))",
         },
-        soil: {
-          dark: "hsl(var(--soil-dark))",
+        forest: {
+          green: "hsl(var(--forest-green))",
+        },
+        mint: {
+          green: "hsl(var(--mint-green))",
+        },
+        sage: {
+          green: "hsl(var(--sage-green))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

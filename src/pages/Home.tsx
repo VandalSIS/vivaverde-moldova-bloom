@@ -79,7 +79,7 @@ const Home = () => {
       </section>
 
       {/* Why Vivaverde Section */}
-      <section className="py-16 lg:py-24 bg-background">
+      <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-foreground mb-4">
@@ -111,7 +111,7 @@ const Home = () => {
       </section>
 
       {/* Story in Images Section */}
-      <section className="py-16 lg:py-24 bg-nature-green-light/30">
+      <section className="py-16 lg:py-24 bg-gradient-light">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-foreground mb-4">
@@ -124,13 +124,13 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {storyImages.map((image, index) => (
-              <div key={index} className="relative group overflow-hidden rounded-lg shadow-earth">
+              <div key={index} className="relative group overflow-hidden rounded-lg shadow-light">
                 <img 
                   src={image.src} 
                   alt={image.alt}
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-soil-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 right-4">
                     <p className="text-primary-foreground text-sm font-medium">
                       {image.caption}
@@ -144,8 +144,8 @@ const Home = () => {
       </section>
 
       {/* Testimonial/Stats Section */}
-      <section className="py-16 lg:py-24 bg-background relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-earth opacity-10"></div>
+      <section className="py-16 lg:py-24 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-nature opacity-10"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-4xl mx-auto text-center">
             <blockquote className="text-2xl lg:text-3xl font-serif font-medium text-foreground mb-8">
@@ -187,7 +187,7 @@ const Home = () => {
           <p className="text-lg mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
             Contactează-ne pentru a afla mai multe despre produsele noastre ecologice
           </p>
-          <Button size="lg" variant="outline" asChild className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10">
+          <Button size="lg" variant="hero-outline" asChild>
             <Link to="/contact">
               Contactează-ne Acum
               <ArrowRight className="ml-2 h-5 w-5" />

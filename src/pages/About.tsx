@@ -29,7 +29,7 @@ const About = () => {
 
   const workProcess = [
     {
-      icon: <Tractor className="h-8 w-8 text-earth-brown" />,
+      icon: <Tractor className="h-8 w-8 text-sage-green" />,
       title: "Pregătirea solului",
       description: "Cu tractorul și lucrul manual pentru structura perfectă"
     },
@@ -39,7 +39,7 @@ const About = () => {
       description: "Fiecare sămânță pusă cu grijă în momentul optim"
     },
     {
-      icon: <Heart className="h-8 w-8 text-harvest-gold" />,
+      icon: <Heart className="h-8 w-8 text-nature-green-medium" />,
       title: "Îngrijirea",
       description: "Plivit manual, irigat controlat, monitorizare constantă"
     },
@@ -57,7 +57,7 @@ const About = () => {
 
   const values = [
     {
-      icon: <Heart className="h-6 w-6 text-harvest-gold" />,
+      icon: <Heart className="h-6 w-6 text-nature-green-medium" />,
       title: "Autenticitate",
       description: "Respectăm tradițiile și metodele naturale"
     },
@@ -72,7 +72,7 @@ const About = () => {
       description: "Cultivăم respectând echilibrul natural"
     },
     {
-      icon: <Eye className="h-6 w-6 text-earth-brown" />,
+      icon: <Eye className="h-6 w-6 text-sage-green" />,
       title: "Transparență",
       description: "Știi exact de unde vin plantele tale"
     }
@@ -93,7 +93,7 @@ const About = () => {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-16 lg:py-24 bg-background">
+      <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             {timeline.map((item, index) => (
@@ -102,7 +102,7 @@ const About = () => {
                   <img 
                     src={item.image} 
                     alt={item.title}
-                    className="w-full h-64 lg:h-80 object-cover rounded-lg shadow-earth"
+                    className="w-full h-64 lg:h-80 object-cover rounded-lg shadow-light"
                   />
                 </div>
                 <div className="lg:w-1/2 flex flex-col justify-center">
@@ -123,7 +123,7 @@ const About = () => {
       </section>
 
       {/* Work Process Section */}
-      <section className="py-16 lg:py-24 bg-nature-green-light/20">
+      <section className="py-16 lg:py-24 bg-gradient-light">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-foreground mb-4">
@@ -155,7 +155,7 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-foreground mb-4">
@@ -185,7 +185,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-earth text-primary-foreground">
+      <section className="py-16 bg-gradient-forest text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold mb-4">
             Cunoaște Povestea Completă

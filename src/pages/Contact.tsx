@@ -73,7 +73,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Info Cards */}
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {contactInfo.map((info, index) => (
@@ -99,7 +99,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form and Map */}
-      <section className="py-16 bg-nature-green-light/20">
+      <section className="py-16 bg-gradient-light">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
@@ -194,7 +194,7 @@ const Contact = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="bg-nature-green-light/30 h-64 rounded-lg flex items-center justify-center mb-4">
+                  <div className="bg-gradient-light h-64 rounded-lg flex items-center justify-center mb-4">
                     <div className="text-center">
                       <MapPin className="h-12 w-12 text-nature-green mx-auto mb-2" />
                       <p className="text-muted-foreground">
@@ -245,7 +245,7 @@ const Contact = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-foreground mb-4">
